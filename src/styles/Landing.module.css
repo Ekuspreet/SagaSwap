@@ -1,0 +1,11 @@
+.parentContainer{
+    background-image: url('../../public/background.png');
+
+
+    height: 100vh;
+    width: auto;
+    background-repeat: repeat;
+    background-size: 100vw;
+    background-position: center;
+
+}
