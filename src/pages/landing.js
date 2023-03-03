@@ -1,6 +1,8 @@
 import Head from 'next/Head'
 import styles from '@/styles/Landing.module.css'
-
+import { Righteous } from 'next/font/google'
+const righteous = Righteous({ subsets: ['latin'],
+                              weight: '400' })
 
 
 export default function Landing(){
@@ -13,14 +15,17 @@ export default function Landing(){
         </Head>
 
         <main className = {styles.parentContainer}>
-        <section >
-            <brandqame>
-            <capital>S</capital>aga <capital>S</capital>wap
-            </brandqame>
+        <section className={`${righteous.className} ${styles.brandHeader}`}>
+            <brandname className={styles.brandName}>
+            <capital className = {styles.capital}>S</capital>aga <capital className = {styles.capital} >S</capital>wap
+            </brandname>
             <br></br>
-            <brandquote>
+            <brandquote className = {styles.brandQuote}>
             The Online Story Game
             </brandquote>
+        </section>
+        <section>
+            hello Im testing out sections
         </section>
 
 
